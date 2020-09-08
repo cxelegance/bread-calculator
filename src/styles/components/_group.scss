@@ -1,0 +1,16 @@
+.group-mixture{
+	background-color: fade-out($color-mixture, .85);
+}
+.group-liquid{
+	background-color: fade-out($color-liquid, .85);
+}
+.group-salt{
+	background-color: fade-out($color-salt, .85);
+}
+.group-flour{
+	background-color: fade-out($color-flour, .85);
+}
+.group-ingredient{
+	border-bottom: 1rem solid fade-out($burnt-brown, .9);
+	padding-top: 1rem;
+}

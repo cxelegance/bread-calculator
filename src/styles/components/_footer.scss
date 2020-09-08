@@ -1,0 +1,9 @@
+.footer{
+	padding: 2rem 0 3rem;
+	@at-root #{&}--CXElegance{
+		font-style: italic;
+		a{
+			color: $color-flour;
+		}
+	}
+}

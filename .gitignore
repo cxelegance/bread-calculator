@@ -1,0 +1,10 @@
+.DS_Store
+/node_modules/
+/public/dist/
+/.env.test
+/.env.development
+/.env.production
+/database/
+/server/
+/env/
+/doc/

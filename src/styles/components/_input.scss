@@ -1,0 +1,12 @@
+input:read-only{
+	background-color: black;
+	color: $light-violet;
+}
+
+.input-numeric{
+	width: 5rem;
+	@media(min-width: $desktop-breakpoint){
+		width: 7rem;
+	}
+
+}

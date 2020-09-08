@@ -1,0 +1,108 @@
+.flex-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	overflow: hidden;
+	@media(min-width: $tiny-breakpoint){
+		flex-wrap: nowrap;
+	}
+}
+.flex-container--off-the-edge{
+	margin-left: $size-xs;
+	margin-right: $size-xs;
+}
+.flex-container--column{
+	flex-direction: column;
+}
+.flex-container--space-around{
+	justify-content: space-around;
+}
+.flex-container--space-between{
+	justify-content: space-between;
+}
+.flex-container__block-item{
+	display: block;
+	width: 50%;
+}
+.flex-container__stacked-item{
+	max-width: 10rem;
+}
+.flex-container__text{
+	padding-right: $size-xs;
+}
+.flex-container__input{
+	flex-grow: 2;
+	min-width: 5rem;
+}
+.flex-container__label{
+	min-width: 9rem;
+	width: 60%;
+}
+.flex-container__circle-item{
+	align-items: center;
+	background-color: yellow; // cascades through missed colour setting below
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	height: 7rem;
+	justify-content: center;
+	margin: $size-xs;
+	width: 7rem;
+	input{
+		background-color: fade-out(white, .3);
+		border-radius: 0.8rem;
+		border-style: inset;
+		border-width: 2px;
+		color: black;
+		text-align: center;
+	}
+	@media(min-width: $desktop-breakpoint){
+		height: 9rem;
+		width: 9rem;
+	}
+	@at-root #{&}--bg-color-mixture{
+		background-color: $color-mixture;
+	}
+	@at-root #{&}--bg-color-flour{
+		background-color: $color-flour;
+	}
+	@at-root #{&}--bg-color-liquid{
+		background-color: $color-liquid;
+	}
+	@at-root #{&}--bg-color-hydration{
+		background-color: $color-hydration;
+	}
+	@at-root #{&}--bg-color-dough{
+		background-color: $color-dough;
+	}
+	@at-root #{&}--bg-color-weight{
+		background-color: $color-weight;
+	}
+}
+.flex-container__rectangle-item {
+	@extend .flex-container__circle-item;
+	border-radius: $size-xs;
+	height: 6rem;
+	&--bg-color-mixture{
+		background-color: $color-mixture;
+	}
+	@at-root #{&}--bg-color-mixture{
+		background-color: $color-mixture;
+	}
+	@at-root #{&}--bg-color-flour{
+		background-color: $color-flour;
+	}
+	@at-root #{&}--bg-color-liquid{
+		background-color: $color-liquid;
+	}
+	@at-root #{&}--bg-color-hydration{
+		background-color: $color-hydration;
+	}
+	@at-root #{&}--bg-color-dough{
+		background-color: $color-dough;
+	}
+	@at-root #{&}--bg-color-weight{
+		background-color: $color-weight;
+	}
+}

@@ -1,0 +1,10 @@
+.content-container{
+	font-size: 1.3rem;
+	padding: 0 $size-m;
+	margin: 0 auto;
+	max-width: 65rem;
+	background-color: fade-out($light-violet, .9);
+	@media(min-width: $desktop-breakpoint){
+		font-size: inherit;
+	}
+}

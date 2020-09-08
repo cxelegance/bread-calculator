@@ -1,0 +1,18 @@
+{
+	"source": {
+		"include": ["./src/"]
+	},
+	"opts":{
+		"access": "all",
+		"destination": "./doc/",
+		"encoding": "utf8",
+		"package": "./package.json",
+		"readme": "./README.md",
+		"recurse": true
+	},
+	"tags": {
+	    "allowUnknownTags": false
+	},
+	"plugins": [
+	]
+}
